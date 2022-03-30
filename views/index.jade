@@ -8,10 +8,13 @@ block content
   br
   h3 usage
   hr
-  p GET '/api/users': Shows all users in the database
 
-  p GET 'api/users/:id': Shows the data of the id
+  p GET  '/companies': Shows all companies in the database
 
-  p PUT 'api/users/:id': Edits the data of the id to the body data
+  p GET '/companies/:id': Shows the company by id
 
-  p DELETE 'api/users/:id': De;ete the data with the id from database
+  p PUT '/companies/:id': Edit companies by id
+
+  p DELETE '/companies/:id': Delete company by id
+
+  p POST '/companies': Creates a new company
