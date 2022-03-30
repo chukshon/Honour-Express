@@ -2,7 +2,7 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 let router = express.Router();
 
 import { get, create, update, getById, remove } from '../controllers/companyController'
-/* GET home page. */
+
 
 import { checkTypes } from '../middleware/validator'
 import { checkPresence } from '../middleware/validator'
@@ -10,7 +10,7 @@ import { checkPresence } from '../middleware/validator'
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Express', name: 'Chukwuka Honour' });
 });
 
 router.get('/companies', get)
