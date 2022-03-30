@@ -7,6 +7,12 @@ import { get, create, update, getById, remove } from '../controllers/companyCont
 import { checkTypes } from '../middleware/validator'
 import { checkPresence } from '../middleware/validator'
 
+
+/* GET home page. */
+router.get('/', function (req, res, next) {
+    res.render('index', { title: 'Express' });
+});
+
 router.get('/companies', get)
 
 router.get('/companies/:id', getById)
